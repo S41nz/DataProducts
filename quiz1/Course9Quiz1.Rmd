@@ -1,0 +1,16 @@
+---
+title: "Data Products - Quiz 1"
+author: "Pablo Sainz"
+date: "July 4, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Here is my map :)
+
+Insert map here
+
+
