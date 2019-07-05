@@ -11,6 +11,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Here is my map :)
 
-Insert map here
-
+```{r,echo=FALSE,warning=FALSE}
+library(leaflet)
+myFirstMap  <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=20.719061,lng = -103.522672,popup = "Hello from my former home :)!!")
+  
+myFirstMap
+```
 
