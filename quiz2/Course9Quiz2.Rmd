@@ -1,0 +1,16 @@
+---
+title: "Data Products - Quiz 2"
+author: "Pablo Sainz"
+date: "July 11, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Enjoy my plot :)
+
+Here is where my plot should go
+
+
