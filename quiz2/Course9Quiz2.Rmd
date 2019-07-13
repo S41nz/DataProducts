@@ -11,6 +11,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Enjoy my plot :)
 
-Here is where my plot should go
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(plotly)
+set.seed(1984)
+temp <-rnorm(1000,mean = 512,sd=16)
+pressure <-rnorm(1000)
+dtime <-1:1000
+plot_ly(x=temp,y=pressure,z=dtime,type = "scatter3d",mode="markers",color=temp)
+
+```
 
 
