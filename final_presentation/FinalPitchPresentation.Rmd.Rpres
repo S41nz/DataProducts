@@ -1,0 +1,41 @@
+Developing Data Products - Final Presentation
+========================================================
+author: Pablo Sainz 
+date: July 22nd 2019
+autosize: true
+
+Overview
+========================================================
+
+The main goals to be addressed by the DataProductsApp are the following ones:
+
+- Create a simple application to apply the knowledge acquired during the course for R application development.
+- Illustrate in an interactive manner the correlation between vehicle weight and its corresponding fuel consumption efficiency.
+- Make a comparison between two relative simple models using linear regression.
+
+Click on the link to try out: <https://s41nz.shinyapps.io/DataProductsApp/>.
+
+Target Data
+========================================================
+
+```{r}
+names(mtcars)
+head(mtcars)
+```
+
+Proposed Models
+========================================================
+
+```{r, eval=FALSE}
+
+mtcars$mpgsp <- ifelse(mtcars$mpg - 20 > 0,mtcars$mpg-20,0)
+# Simplest model (just mpg as predictor)
+testModel1 <- lm(wt ~ mpg,data = mtcars)
+# More complex one ( user input + mpg as predictor)
+testModel2 <- lm(wt ~ mpgsp + mpg, data = mtcars)
+```
+The application uses both models to plot a comparison with the actual data from the 
+database.
+
+========================================================
+Thank you : )
